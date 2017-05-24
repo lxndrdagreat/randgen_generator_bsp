@@ -5,7 +5,7 @@ from randgen_maptools import coord_to_1d_index
 
 __author__ = 'Dan Alexander'
 __email__ = 'lxndrdagreat@gmail.com'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 """
@@ -16,33 +16,30 @@ schema = {
         'type': 'integer',
         'min': 25,
         'coerce': int,
-        'required': True
+        'required': True,
+        'default': 50
     },
     'height': {
         'type': 'integer',
         'min': 25,
         'coerce': int,
-        'required': True
+        'required': True,
+        'default': 50
     },
     'min_size': {
         'type': 'integer',
         'min': 3,
         'coerce': int,
-        'required': True
+        'required': True,
+        'default': 5
     },
     'max_size': {
         'type': 'integer',
         'min': 5,
         'coerce': int,
-        'required': True
+        'required': True,
+        'default': 12
     }
-}
-
-schema_default = {
-    'width': 50,
-    'height': 50,
-    'min_size': 5,
-    'max_size': 12
 }
 
 
